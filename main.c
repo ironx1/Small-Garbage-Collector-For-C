@@ -10,7 +10,7 @@ int main(void){
   
     int *copyNumbers = assign(&copyNumbers, numbers, gc);
   
-    numbers = NULL;
+    numbers = mem_alloc(int, 10);
   
     check(gc);
   
