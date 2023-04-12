@@ -52,7 +52,7 @@ void check(GarbageCollector *gc){
     int flag = 0;
     int size = 0;
     while(iter!=NULL){
-        if(*(iter->ptrAddress) == NULL){
+        if(*(iter->ptrAddress) == NULL || *(iter->ptrAddress)!=gc->dataAddress){
             flag++;
         }
         size ++;
