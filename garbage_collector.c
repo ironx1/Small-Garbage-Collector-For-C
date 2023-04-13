@@ -58,7 +58,7 @@ void check(GarbageCollector *gc){
         size ++;
         iter = iter->next;
     }
-    if(flag==size){
+    if(flag==size&&flag!=0){
         free(gc->dataAddress);
         free(gc->list);
         gc->dataAddress = NULL;
